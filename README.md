@@ -29,7 +29,7 @@ It's possible to specify an image repository we'd like to use instead of upstrea
 
 ## Mirroring public images to an internal repository
 
-Because the image names and tags used by the prometheus operator are defined in code, I've written a bit of jsonnet outputing the docker commands necessary to mirror all images used by the operator to an internal repository:
+Because the image names and tags used by the prometheus operator are defined in code, I've written a bit of jsonnet outputting the docker commands necessary to mirror all images used by the operator to an internal repository:
 
 ```console
 $ jsonnet -S --tla-str repository=foo.com/organization sync-to-registry.jsonnet 
