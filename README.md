@@ -18,6 +18,15 @@ This will create a `manifests/` directory with all resources to apply:
 $ kubectl -f manifests/
 ```
 
+## Building manifests for an internal repository
+
+It's possible to specify an image repository we'd like to use instead of upstream images:
+
+```console
+./build.sh --tla-str repository=foo.com/organization
+
+```
+
 ## Mirroring public images to an internal repository
 
 Because the image names and tags used by the prometheus operator are defined in code, I've written a bit of jsonnet outputing the docker commands necessary to mirror all images used by the operator to an internal repository:
