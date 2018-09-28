@@ -39,6 +39,12 @@ docker push foo.com/organization/addon-resizer:1.0
 docker pull quay.io/prometheus/alertmanager:v0.15.2
 docker tag quay.io/prometheus/alertmanager:v0.15.2 foo.com/organization/alertmanager:v0.15.2
 docker push foo.com/organization/alertmanager:v0.15.2
+docker pull quay.io/coreos/configmap-reload:v0.0.1
+docker tag quay.io/coreos/configmap-reload:v0.0.1 foo.com/organization/configmap-reload:v0.0.1
+docker push foo.com/organization/configmap-reload:v0.0.1
+docker pull grafana/grafana:5.2.1
+docker tag grafana/grafana:5.2.1 foo.com/organization/grafana:5.2.1
+docker push foo.com/organization/grafana:5.2.1
 docker pull quay.io/coreos/kube-rbac-proxy:v0.3.1
 docker tag quay.io/coreos/kube-rbac-proxy:v0.3.1 foo.com/organization/kube-rbac-proxy:v0.3.1
 docker push foo.com/organization/kube-rbac-proxy:v0.3.1
@@ -51,6 +57,9 @@ docker push foo.com/organization/node-exporter:v0.16.0
 docker pull quay.io/prometheus/prometheus:v2.3.2
 docker tag quay.io/prometheus/prometheus:v2.3.2 foo.com/organization/prometheus:v2.3.2
 docker push foo.com/organization/prometheus:v2.3.2
+docker pull quay.io/coreos/prometheus-config-reloader:v0.23.2
+docker tag quay.io/coreos/prometheus-config-reloader:v0.23.2 foo.com/organization/prometheus-config-reloader:v0.23.2
+docker push foo.com/organization/prometheus-config-reloader:v0.23.2
 docker pull quay.io/coreos/prometheus-operator:v0.23.2
 docker tag quay.io/coreos/prometheus-operator:v0.23.2 foo.com/organization/prometheus-operator:v0.23.2
 docker push foo.com/organization/prometheus-operator:v0.23.2
