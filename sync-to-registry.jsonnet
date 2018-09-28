@@ -1,4 +1,5 @@
-local config = import 'config.libsonnet';
+local kp = import 'kube-prometheus/kube-prometheus.libsonnet';
+local config = kp._config;
 
 // imageName extracts the image name from a fully qualified image string. eg.
 // quay.io/coreos/addon-resizer -> addon-resizer
