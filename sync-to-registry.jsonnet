@@ -3,7 +3,7 @@ local config = kp._config;
 
 // imageName extracts the image name from a fully qualified image string. eg.
 // quay.io/coreos/addon-resizer -> addon-resizer
-// grafana/grafana:5.2.1 -> grafana
+// grafana/grafana -> grafana
 local imageName(image) =
     local parts = std.split(image, '/');
     local len = std.length(parts);
